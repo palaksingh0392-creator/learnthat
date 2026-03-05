@@ -3,12 +3,25 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <h1 className="text-7xl caret-amber-300 m-1.5 text-center pt-34 mt-6 font-sans">
-        Welcome to learn that
-      </h1>
-      <button className="bg-blue-400 hover:bg-sky-700 text-2xl rounded-2xl w-34 h-10 text-amber-50 shadow-xs ml-160 mt-12">
-        learn more
-      </button>
+      <section className="relative min-h-screen flex flex-col items-center overflow-hidden pt-28">
+        <div className="hero-bg absolute inset-0 z-0"></div>
+        <div className="relative z-2 text-center max-w-[780] px-6 animate-fade-up">
+          <p className="text-[0.78rem] tracking-normal text-muted mb-5 font-normal">
+            the best platform you visit for learning
+          </p>
+          <h1 className="font-serif font-normal text-[clamp(2.4rem,5.5vw,4rem)] leading-[1.12] text-dark mb-5 tracking-tight">
+            Want to learn something, Switch to
+            <br />
+            <strong> Learnthat</strong>
+          </h1>
+          <p className="text-base text-[#555] leading-[1.65] max-w-[520px] mx-auto mb-10 font-light">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
+            voluptatibus mollitia, fugiat ut eius quia nesciunt eveniet nostrum
+            voluptas ea quasi fugit quisquam. Tenetur nisi maiores repellat fuga
+            minus distinctio!
+          </p>
+        </div>
+      </section>
     </>
   );
 }
