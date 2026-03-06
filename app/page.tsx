@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-screen flex flex-col items-center overflow-hidden pt-28">
+      <section className="relative min-h-screen flex flex-col items-center overflow-hidden pt-12">
         <div className="hero-bg absolute inset-0 z-0"></div>
         <div className="relative z-2 text-center max-w-[780] px-6 animate-fade-up">
           <p className="text-[0.78rem] tracking-normal text-muted mb-5 font-normal">
@@ -20,6 +21,25 @@ export default function Home() {
             voluptas ea quasi fugit quisquam. Tenetur nisi maiores repellat fuga
             minus distinctio!
           </p>
+
+          <ul className="flex fles-row gap-5 items-center  pl-57 ">
+            {" "}
+            <li>
+              <Link href="#">
+                <button className="bg-stone-600 text-l text-white w-34 rounded-xl h-9">
+                  Explore modules
+                </button>
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link href="#">
+                <button className="bg-red-400 text-l text-white w-34 rounded-xl h-9">
+                  Watch tutorials
+                </button>{" "}
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
     </>
