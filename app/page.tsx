@@ -14,7 +14,7 @@ export default function Home() {
             <br />
             <strong> Learnthat</strong>
           </h1>
-          <p className="text-base text-[#555] leading-[1.65] max-w-[520px] mx-auto mb-10 font-light">
+          <p className="text-base text-[#555] leading-[1.65] max-w-130 mx-auto mb-10 font-light">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
             voluptatibus mollitia, fugiat ut eius quia nesciunt eveniet nostrum
             voluptas ea quasi fugit quisquam. Tenetur nisi maiores repellat fuga
