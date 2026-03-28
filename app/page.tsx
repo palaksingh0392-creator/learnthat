@@ -42,6 +42,23 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      <section className="relative  flex flex-col items-center overflow-hidden p-20">
+        <div>
+          <h2 className="text-center text-2xl font-bold">Lorem ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            accusamus molestias harum? <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quidem ad velit.
+          </p>
+        </div>
+        <div className="grid grid-cols-4 gap-4 content-center">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+          <div>04</div>
+        </div>
+      </section>
     </>
   );
 }
