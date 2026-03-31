@@ -21,31 +21,31 @@ export default function Navbar() {
             <Menubar className="border-none bg-transparent shadow-none">
               <MenubarMenu>
                 <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
-                  Home
+                  <Link href="/"> Home</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
               <MenubarMenu>
                 <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
-                  <Link href="/">Courses</Link>
+                  <Link href="/course">Courses</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
               <MenubarMenu>
                 <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
-                  Notes
+                  <Link href="/notes"> Notes</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
               <MenubarMenu>
                 <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
-                  Tutorials
+                  <Link href="/tutorials"> Tutorials</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
               <MenubarMenu>
                 <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
-                  Contact
+                  <Link href="/contact">Contact</Link>
                 </MenubarTrigger>
               </MenubarMenu>
             </Menubar>
