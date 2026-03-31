@@ -12,10 +12,10 @@ export default function Home() {
             the best platform you visit for learning
           </p>
           <h1 className="font-serif font-normal text-[clamp(2.4rem,5.5vw,4rem)] leading-[1.12] text-dark mb-5 tracking-tight">
-            <TextAnimate animation="blurIn" as="h1">
+            <TextAnimate animation="blurIn" className="m-0">
               Want to learn something, Switch to
             </TextAnimate>
-            <br />
+
             <strong> Learnthat</strong>
           </h1>
           <p className="text-base text-[#555] leading-[1.65] max-w-130 mx-auto mb-10 font-light">
