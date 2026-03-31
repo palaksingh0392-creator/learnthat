@@ -1,14 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
-    
     <>
-    
       <section className="relative min-h-screen flex flex-col items-center overflow-hidden pt-20">
         <div className="hero-bg absolute inset-0 z-0"></div>
         <div className="relative z-2 text-center max-w-[780] px-6 animate-fade-up">
-          <p className="text-[0.78rem] tracking-normal text-muted mb-5 font-normal">
+          <p className="text-[0.89rem] tracking-normal text-muted mb-5 font-normal">
             the best platform you visit for learning
           </p>
           <h1 className="font-serif font-normal text-[clamp(2.4rem,5.5vw,4rem)] leading-[1.12] text-dark mb-5 tracking-tight">
@@ -27,17 +25,23 @@ export default function Home() {
             {" "}
             <li>
               <Link href="#">
-                <button className="bg-stone-600 text-l text-white w-34 rounded-xl h-9">
+                <Button
+                  variant="ghost"
+                  className="hidden sm:inline-flex bg-stone-600 text-white"
+                >
                   Explore modules
-                </button>
+                </Button>
               </Link>
             </li>
             <li>
               {" "}
               <Link href="#">
-                <button className="bg-red-400 text-l text-white w-34 rounded-xl h-9">
+                <Button
+                  variant="ghost"
+                  className="hidden sm:inline-flex bg-red-400 text-white"
+                >
                   Watch tutorials
-                </button>{" "}
+                </Button>
               </Link>
             </li>
           </ul>
