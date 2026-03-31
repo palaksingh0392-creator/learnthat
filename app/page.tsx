@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { TextAnimate } from "@/components/ui/text-animate";
+import { RainbowButton } from "@/components/ui/rainbow-button";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
             {" "}
             <li>
               <Link href="#">
+              <RainbowButton>Rainbow Button</RainbowButton>
                 <Button
                   variant="outline"
                   className="hidden sm:inline-flex bg-stone-600 text-white"
