@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { TextAnimate } from "@/components/ui/text-animate";
+
 export default function Home() {
   return (
     <>
@@ -10,7 +12,9 @@ export default function Home() {
             the best platform you visit for learning
           </p>
           <h1 className="font-serif font-normal text-[clamp(2.4rem,5.5vw,4rem)] leading-[1.12] text-dark mb-5 tracking-tight">
-            Want to learn something, Switch to
+            <TextAnimate animation="blurIn" as="h1">
+              Want to learn something, Switch to
+            </TextAnimate>
             <br />
             <strong> Learnthat</strong>
           </h1>
