@@ -2,7 +2,15 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { TextAnimate } from "@/components/ui/text-animate";
 import { RainbowButton } from "@/components/ui/rainbow-button";
-
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 export default function Home() {
   return (
     <>
@@ -57,12 +65,19 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
             quidem ad velit.
           </p>
-        </div>
-        <div className="grid grid-cols-4 gap-4 content-center">
-          <div>01</div>
-          <div>02</div>
-          <div>03</div>
-          <div>04</div>
+          <Card>
+            <CardHeader>
+              <CardTitle>Card Title</CardTitle>
+              <CardDescription>Card Description</CardDescription>
+              <CardAction>Card Action</CardAction>
+            </CardHeader>
+            <CardContent>
+              <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+              <p>Card Footer</p>
+            </CardFooter>
+          </Card>
         </div>
       </section>
     </>
