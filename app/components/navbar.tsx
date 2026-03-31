@@ -5,13 +5,13 @@ import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 export default function Navbar() {
   return (
     <>
-      <header className="w-full border-b bg-white">
+      <header className="w-full border-b bg-light">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* 1. LOGO SECTION */}
           <div className="flex items-center">
             <a
               href="/"
-              className="text-3xl font-bold tracking-tighter text-grey-600"
+              className="text-3xl font-bold tracking-tighter text-dark"
             >
               Learnthat
             </a>
@@ -21,31 +21,31 @@ export default function Navbar() {
           <nav className="hidden md:block">
             <Menubar className="border-none bg-transparent shadow-none">
               <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
+                <MenubarTrigger className="cursor-pointer text-dark hover:text-blue-600">
                   <Link href="/"> Home</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
               <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
+                <MenubarTrigger className="cursor-pointer text-dark hover:text-blue-600">
                   <Link href="/course">Courses</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
               <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
+                <MenubarTrigger className="cursor-pointer text-dark hover:text-blue-600">
                   <Link href="/notes"> Notes</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
               <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
+                <MenubarTrigger className="cursor-pointer text-dark hover:text-blue-600">
                   <Link href="/tutorials"> Tutorials</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
               <MenubarMenu>
-                <MenubarTrigger className="cursor-pointer text-slate-600 hover:text-blue-600">
+                <MenubarTrigger className="cursor-pointer text-dark hover:text-blue-600">
                   <Link href="/contact">Contact</Link>
                 </MenubarTrigger>
               </MenubarMenu>

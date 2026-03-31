@@ -9,7 +9,7 @@ export default function Home() {
       <section className="relative min-h-screen flex flex-col items-center overflow-hidden pt-20">
         <div className="hero-bg absolute inset-0 z-0"></div>
         <div className="relative z-2 text-center max-w-[780] px-6 animate-fade-up">
-          <p className="text-[0.89rem] tracking-normal text-muted mb-5 font-normal">
+          <p className="text-[0.89rem] dark:text-white tracking-normal text-muted mb-5 font-normal">
             the best platform you visit for learning
           </p>
           <h1 className="font-serif font-normal text-[clamp(2.4rem,5.5vw,4rem)] leading-[1.12] text-dark mb-5 tracking-tight">
@@ -19,7 +19,7 @@ export default function Home() {
 
             <strong> Learnthat</strong>
           </h1>
-          <p className="text-base text-[#555] leading-[1.65] max-w-130 mx-auto mb-10 font-light">
+          <p className="text-base text-[#555] dark:text-white leading-[1.65] max-w-130 mx-auto mb-10 font-light">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
             voluptatibus mollitia, fugiat ut eius quia nesciunt eveniet nostrum
             voluptas ea quasi fugit quisquam. Tenetur nisi maiores repellat fuga

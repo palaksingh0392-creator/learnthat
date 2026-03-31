@@ -4,29 +4,54 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@layer base {
+  :root {
+    --hero-bg-base: linear-gradient(
+      140deg,
+      #f9fdfd 0%,
+      #d7eef0 45%,
+      #fdfdfd 100%
+    );
+    --glow-1: rgba(54, 188, 215, 0.55);
+    --glow-2: rgba(40, 115, 150, 0.5);
+    --glow-3: rgba(36, 45, 210, 0.4);
+    --after-glow: rgba(253, 246, 242, 0.35);
+  }
+
+  .dark {
+    /* Deep slate/black base for dark mode */
+    --hero-bg-base: linear-gradient(
+      140deg,
+      #020617 0%,
+      #0f172a 45%,
+      #020617 100%
+    );
+    /* Make the radial glows more "electric" but lower opacity so they don't wash out text */
+    --glow-1: rgba(54, 188, 215, 0.15);
+    --glow-2: rgba(40, 115, 150, 0.2);
+    --glow-3: rgba(99, 102, 241, 0.2); /* Added a touch of Indigo */
+    --after-glow: rgba(0, 0, 0, 0.5);
+  }
+}
+
 .hero-bg {
   background:
     radial-gradient(
       ellipse 70% 65% at 55% 30%,
-      rgba(54, 188, 215, 0.55) 0%,
+      var(--glow-1) 0%,
       transparent 65%
     ),
     radial-gradient(
       ellipse 55% 55% at 25% 55%,
-      rgba(40, 115, 150, 0.5) 0%,
+      var(--glow-2) 0%,
       transparent 60%
     ),
     radial-gradient(
       ellipse 60% 50% at 75% 60%,
-      rgba(36, 45, 210, 0.4) 0%,
+      var(--glow-3) 0%,
       transparent 60%
     ),
-    radial-gradient(
-      ellipse 80% 80% at 50% 10%,
-      rgba(9, 121, 155, 0.35) 0%,
-      transparent 55%
-    ),
-    linear-gradient(140deg, #f9fdfd 0%, #d7eef0 45%, #fdfdfd 100%);
+    var(--hero-bg-base);
 }
 
 .hero-bg::after {
@@ -36,10 +61,18 @@
   background: radial-gradient(
     ellipse 90% 80% at 50% 20%,
     transparent 40%,
-    rgba(253, 246, 242, 0.35) 100%
+    var(--after-glow) 100%
   );
+  pointer-events: none;
 }
-
+.dark .hero-bg::after {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 30px 30px;
+}
 .area-chart-wrap {
   width: calc(100% + 4rem);
   margin-left: -2rem;
@@ -122,29 +155,21 @@
       opacity: 0;
     }
   }
-  --animate-rainbow:
-    rainbow var(--speed, 2s) infinite linear;
-  --color-color-5:
-    var(--color-5);
-  --color-color-4:
-    var(--color-4);
-  --color-color-3:
-    var(--color-3);
-  --color-color-2:
-    var(--color-2);
-  --color-color-1:
-    var(--color-1)
-;
+  --animate-rainbow: rainbow var(--speed, 2s) infinite linear;
+  --color-color-5: var(--color-5);
+  --color-color-4: var(--color-4);
+  --color-color-3: var(--color-3);
+  --color-color-2: var(--color-2);
+  --color-color-1: var(--color-1);
   @keyframes rainbow {
-  0% {
-    background-position:
-    0%;
+    0% {
+      background-position: 0%;
     }
-  100% {
-    background-position:
-    200%;
+    100% {
+      background-position: 200%;
     }
-  }}
+  }
+}
 
 :root {
   --background: oklch(1 0 0);
@@ -179,16 +204,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --color-1:
-    oklch(66.2% 0.225 25.9);
-  --color-2:
-    oklch(60.4% 0.26 302);
-  --color-3:
-    oklch(69.6% 0.165 251);
-  --color-4:
-    oklch(80.2% 0.134 225);
-  --color-5:
-    oklch(90.7% 0.231 133);
+  --color-1: oklch(66.2% 0.225 25.9);
+  --color-2: oklch(60.4% 0.26 302);
+  --color-3: oklch(69.6% 0.165 251);
+  --color-4: oklch(80.2% 0.134 225);
+  --color-5: oklch(90.7% 0.231 133);
 }
 
 .dark {
@@ -223,16 +243,11 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-  --color-1:
-    oklch(66.2% 0.225 25.9);
-  --color-2:
-    oklch(60.4% 0.26 302);
-  --color-3:
-    oklch(69.6% 0.165 251);
-  --color-4:
-    oklch(80.2% 0.134 225);
-  --color-5:
-    oklch(90.7% 0.231 133);
+  --color-1: oklch(66.2% 0.225 25.9);
+  --color-2: oklch(60.4% 0.26 302);
+  --color-3: oklch(69.6% 0.165 251);
+  --color-4: oklch(80.2% 0.134 225);
+  --color-5: oklch(90.7% 0.231 133);
 }
 
 @layer base {
@@ -247,9 +262,8 @@
   }
 }
 
-::view-transition-old(root), ::view-transition-new(root) {
-    animation:
-    none;
-    mix-blend-mode:
-    normal;
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }
