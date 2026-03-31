@@ -26,7 +26,7 @@ export default function Home() {
             <li>
               <Link href="#">
                 <Button
-                  variant="ghost"
+                  variant="outline"
                   className="hidden sm:inline-flex bg-stone-600 text-white"
                 >
                   Explore modules
