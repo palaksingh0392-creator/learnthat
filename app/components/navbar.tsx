@@ -1,6 +1,7 @@
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 export default function Navbar() {
   return (
     <>
@@ -59,6 +60,7 @@ export default function Navbar() {
             <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md">
               Get Started
             </Button>
+            <AnimatedThemeToggler />
           </div>
         </div>
       </header>

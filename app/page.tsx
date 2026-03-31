@@ -30,24 +30,19 @@ export default function Home() {
             {" "}
             <li>
               <Link href="#">
-              <RainbowButton>Rainbow Button</RainbowButton>
-                <Button
-                  variant="outline"
-                  className="hidden sm:inline-flex bg-stone-600 text-white"
-                >
+                <RainbowButton variant={"outline"}>
+                  {" "}
                   Explore modules
-                </Button>
+                </RainbowButton>
               </Link>
             </li>
             <li>
               {" "}
               <Link href="#">
-                <Button
-                  variant="ghost"
-                  className="hidden sm:inline-flex bg-red-400 text-white"
-                >
+                <RainbowButton variant={"default"}>
+                  {" "}
                   Watch tutorials
-                </Button>
+                </RainbowButton>
               </Link>
             </li>
           </ul>
