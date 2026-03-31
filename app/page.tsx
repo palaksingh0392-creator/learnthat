@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-
 export default function Home() {
   return (
+    
     <>
+    
       <section className="relative min-h-screen flex flex-col items-center overflow-hidden pt-20">
         <div className="hero-bg absolute inset-0 z-0"></div>
         <div className="relative z-2 text-center max-w-[780] px-6 animate-fade-up">
