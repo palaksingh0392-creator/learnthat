@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import courseData from "@/data/module.json"; // Import your JSON here
 
 import { Button } from "@/components/ui/button";
+import { ShineBorder } from "@/components/ui/shine-border";
 export default function Home() {
   return (
     <>
@@ -55,10 +56,10 @@ export default function Home() {
       </section>
       <section>
         <div className="relative h-225 w-full overflow-hidden">
-          <section className="max-w-7xl mx-auto px-6 py-20 font-sans bg-">
+          <section className="max-w-7xl mx-auto px-6 py-20  ">
             {" "}
             <Meteors />
-            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 font-serif">
               <div className="max-w-2xl">
                 <h2 className="text-5xl font-bold tracking-tight dark:text-white text-slate-900 leading-[1.1]">
                   New Skills with <AuroraText>Learnthat</AuroraText>
@@ -69,7 +70,7 @@ export default function Home() {
                 </h2>
               </div>
 
-              <div className="flex flex-col items-end gap-4">
+              <div className="flex flex-col items-end gap-4 font-light">
                 <p className="text-slate-500 dark:text-white text-right max-w-50 text-sm">
                   With real world projects to create and online classNamees that
                   fit a busy routine
@@ -140,7 +141,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-wrap items-center gap-4">
-              <h4 className="text-xl font-bold mr-4">
+              <h4 className="text-3xl font-bold mr-4">
                 Our Features <br /> Special For You
               </h4>
 
@@ -159,14 +160,14 @@ export default function Home() {
             </div>{" "}
           </section>
         </div>
-      </section>
+      </section>{" "}
       <section className="py-20 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12">
             Popular Courses
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             {courseData.map((course) => (
               <Card
                 key={course.id}
@@ -205,13 +206,13 @@ export default function Home() {
                   </div>
                 </CardContent>
 
-                <CardFooter className="flex justify-between items-center border-t border-slate-100/50 pt-6">
-                  <span className="text-2xl font-bold text-slate-900">
+                <CardFooter className="flex justify-between items-center border-t rounded-t-2xl border-slate-100/50 dark:bg-slate-500 pt-6">
+                  <span className="text-2xl font-bold text-slate-900 dark:text-white">
                     {course.price}
                   </span>
                   <Button
                     variant={course.theme.buttonVariant as any}
-                    className={`rounded-full px-6 ${course.id === 2 ? "bg-[#9D95FF] text-white hover:bg-[#8a82e6]" : ""}`}
+                    className={`rounded-full px-6 ${course.id === 2 ? "bg-[#2a2d2f]  text-white hover:bg-[#8a82e6]" : ""}`}
                   >
                     Join Now →
                   </Button>
@@ -219,6 +220,93 @@ export default function Home() {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="bg-[#0a0a0a] text-white py-24 px-6 relative overflow-hidden">
+        {/* 1. COMMUNITY CTA */}
+        <div className="max-w-3xl mx-auto text-center relative z-10">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+            Join The Community
+          </h2>
+          <p className="text-slate-400 text-lg mb-10 max-w-lg mx-auto">
+            At CourseCo, we believe that learning is a collaborative process.
+          </p>
+
+          {/* SUBSCRIPTION PILL */}
+          <div className="relative max-w-md mx-auto group">
+            <div className="flex items-center bg-white rounded-full p-1 pl-6 shadow-lg transition-all focus-within:ring-2 focus-within:ring-purple-500">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="border-none bg-transparent text-slate-900 focus-visible:ring-0 placeholder:text-slate-400 h-12"
+              />
+              <Button className="bg-[#1a1a1a] hover:bg-slate-800 text-white rounded-full px-8 py-6 h-12 flex items-center gap-2">
+                Subscribe
+                <span className="bg-purple-400/20 text-purple-300 p-1 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* 2. DECORATIVE BACKGROUND ICONS (Positioned Absolutely) */}
+        <div className="absolute top-1/2 left-10 -translate-y-1/2 opacity-20 hidden lg:block">
+          {/* Insert Trophy SVG here */}
+          <svg
+            width="150"
+            height="150"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            className="text-slate-500"
+          >
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+            <path d="M4 22h16" />
+            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+          </svg>
+        </div>
+
+        {/* 3. FOOTER NAV */}
+        <div className="max-w-7xl mx-auto mt-32 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-orange-400 to-purple-500" />
+            <span className="text-xl font-bold">CourseCo</span>
+          </div>
+
+          <nav className="flex gap-8 text-slate-400 font-medium">
+            <a href="#" className="hover:text-white transition-colors">
+              Home
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Courses
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              Community
+            </a>
+            <a href="#" className="hover:text-white transition-colors">
+              About
+            </a>
+          </nav>
+
+          <div className="text-slate-500 text-sm">© 2024 CourseCo.</div>
         </div>
       </section>
     </>
