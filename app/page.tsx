@@ -9,6 +9,7 @@ import courseData from "@/data/module.json"; // Import your JSON here
 
 import { Button } from "@/components/ui/button";
 import { ShineBorder } from "@/components/ui/shine-border";
+import { Input } from "@/components/ui/input";
 export default function Home() {
   return (
     <>
@@ -222,7 +223,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#0a0a0a] text-white py-24 px-6 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] text-white py-9 px-2 relative overflow-hidden">
         {/* 1. COMMUNITY CTA */}
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
@@ -250,9 +251,9 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -282,31 +283,6 @@ export default function Home() {
             <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
             <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
           </svg>
-        </div>
-
-        {/* 3. FOOTER NAV */}
-        <div className="max-w-7xl mx-auto mt-32 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-orange-400 to-purple-500" />
-            <span className="text-xl font-bold">CourseCo</span>
-          </div>
-
-          <nav className="flex gap-8 text-slate-400 font-medium">
-            <a href="#" className="hover:text-white transition-colors">
-              Home
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Courses
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Community
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              About
-            </a>
-          </nav>
-
-          <div className="text-slate-500 text-sm">© 2024 CourseCo.</div>
         </div>
       </section>
     </>
