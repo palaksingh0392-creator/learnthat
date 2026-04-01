@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "UI Design Landing Page",
+    "description": "In our basic exploration UI/UX design course, you'll learn the fundamentals of UI and UX design, including how to create wireframes, design prototypes, and conduct user research.",
+    "price": "$135.00",
+    "rating": "4.8",
+    "instructor": "Heydetya",
+    "category": "UI/UX",
+    "theme": {
+      "cardBg": "bg-white",
+      "badge": "bg-pink-100 text-pink-600",
+      "buttonVariant": "outline"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Html and JavaScript",
+    "description": "You'll learn how to create web pages from scratch, style them with CSS, and add interactivity with JavaScript.",
+    "price": "$120.00",
+    "rating": "4.7",
+    "instructor": "M. Johansen",
+    "category": "Web Development",
+    "theme": {
+      "cardBg": "bg-[#C1FFD7]",
+      "badge": "bg-yellow-200 text-yellow-700",
+      "buttonVariant": "default"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Basic Flat Illustration",
+    "description": "With expert guidance and practical tips, you'll gain the skills you need to create stunning flat illustrations that stand out from the crowd.",
+    "price": "$128.00",
+    "rating": "4.5",
+    "instructor": "Savannah Nguyen",
+    "category": "Illustration",
+    "theme": {
+      "cardBg": "bg-white",
+      "badge": "bg-purple-100 text-purple-600",
+      "buttonVariant": "outline"
+    }
+  }
+]

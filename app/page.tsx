@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { TextAnimate } from "@/components/ui/text-animate";
 import { RainbowButton } from "@/components/ui/rainbow-button";
+import { AuroraText } from "@/components/ui/aurora-text";
+import { Meteors } from "@/components/ui/meteors";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import courseData from "@/data/module.json"; // Import your JSON here
 
+import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <>
@@ -48,60 +54,35 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <section className="max-w-7xl mx-auto px-6 py-20 font-sans bg-">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div className="max-w-2xl">
-              <h2 className="text-5xl font-bold tracking-tight dark:text-white text-slate-900 leading-[1.1]">
-                New Skills with CourseCo.
-                <br />
-                <span className="text-slate-800 dark:text-white">
-                  A Detailed Look at Our Curriculum
-                </span>
-              </h2>
-            </div>
-            <div className="flex flex-col items-end gap-4">
-              <p className="text-slate-500 dark:text-white text-right max-w-50 text-sm">
-                With real world projects to create and online classNamees that
-                fit a busy routine
-              </p>
-              <button className="bg-slate-950 text-white px-8 py-3 rounded-full flex items-center gap-2 hover:bg-slate-800 transition-all font-medium">
-                Get Started
-                <span className="text-lg">→</span>
-              </button>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
-            <div className="md:col-span-4 bg-[#BEE9FF] rounded-[40px] p-10 flex flex-col gap-6">
-              <div className="w-12 h-12 bg-[#9D95FF] rounded-full flex items-center justify-center text-dark shrink-0">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="size-6"
-                >
-                  <path d="m7.5 4.27 9 5.15" />
-                  <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-                  <path d="m3.3 7 8.7 5 8.7-5" />
-                  <path d="M12 22V12" />
-                </svg>
+        <div className="relative h-225 w-full overflow-hidden">
+          <section className="max-w-7xl mx-auto px-6 py-20 font-sans bg-">
+            {" "}
+            <Meteors />
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+              <div className="max-w-2xl">
+                <h2 className="text-5xl font-bold tracking-tight dark:text-white text-slate-900 leading-[1.1]">
+                  New Skills with <AuroraText>Learnthat</AuroraText>
+                  <br />
+                  <span className="text-slate-800 dark:text-white">
+                    A Detailed Look at Our Curriculum
+                  </span>
+                </h2>
               </div>
-              <div>
-                <h3 className="text-2xl font-semibold text-slate-900 leading-tight mb-4">
-                  Learn at your own pace
-                </h3>
-                <p className="text-slate-700 text-sm leading-relaxed">
-                  Hands-on creative classes designed for your schedule.
-                </p>
-              </div>
-            </div>
 
-            <div className="md:col-span-8 bg-[#C1FFD7] rounded-[40px] p-10 flex flex-col md:flex-row gap-8 items-center">
-              <div className="flex flex-col gap-6">
-                <div className="w-12 h-12 bg-[#FF7E7E] rounded-full flex items-center justify-center text-white shrink-0">
+              <div className="flex flex-col items-end gap-4">
+                <p className="text-slate-500 dark:text-white text-right max-w-50 text-sm">
+                  With real world projects to create and online classNamees that
+                  fit a busy routine
+                </p>
+                <button className="bg-slate-600 text-white px-8 py-3 rounded-full flex items-center gap-2 hover:bg-slate-800 transition-all font-medium">
+                  Get Started
+                  <span className="text-lg">→</span>
+                </button>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
+              <div className="md:col-span-4 bg-[#8bd8e0] rounded-[40px] p-10 flex flex-col gap-6">
+                <div className="w-12 h-12 bg-[#f3f3f3] rounded-full flex items-center justify-center text-dark shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -112,45 +93,134 @@ export default function Home() {
                     strokeWidth="2"
                     className="size-6"
                   >
-                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
-                    <circle cx="12" cy="12" r="3" />
+                    <path d="m7.5 4.27 9 5.15" />
+                    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                    <path d="m3.3 7 8.7 5 8.7-5" />
+                    <path d="M12 22V12" />
                   </svg>
                 </div>
-                <h3 className="text-3xl font-semibold text-slate-900 leading-tight">
-                  CourseCo teachers are everyday creatives and professionals.
-                </h3>
-                <p className="text-slate-700 leading-relaxed">
-                  At CourseCo, we believe that everyone has something to teach.
-                  Our teachers are not just experts; they are passionate mentors
-                  helping you discover your own creativity.
-                </p>
+                <div>
+                  <h3 className="text-2xl font-semibold text-slate-900 leading-tight mb-4">
+                    Learn at your own pace
+                  </h3>
+                  <p className="text-slate-700 text-sm leading-relaxed">
+                    Hands-on creative classes designed for your schedule.
+                  </p>
+                </div>
               </div>
 
-              <div className="hidden lg:block w-full h-full bg-white/20 rounded-2xl min-h-50"></div>
+              <div className="md:col-span-8 bg-[#9ac1fb] rounded-[40px] p-10 flex flex-col md:flex-row gap-8 items-center">
+                <div className="flex flex-col gap-6">
+                  <div className="w-12 h-12 bg-[#000000] rounded-full flex items-center justify-center text-white shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="size-6"
+                    >
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </svg>
+                  </div>
+                  <h3 className="text-3xl font-semibold text-slate-900 leading-tight">
+                    CourseCo teachers are everyday creatives and professionals.
+                  </h3>
+                  <p className="text-slate-700 leading-relaxed">
+                    At CourseCo, we believe that everyone has something to
+                    teach. Our teachers are not just experts; they are
+                    passionate mentors helping you discover your own creativity.
+                  </p>
+                </div>
+
+                <div className="hidden lg:block w-full h-full bg-white/20 rounded-2xl min-h-50"></div>
+              </div>
             </div>
-          </div>
+            <div className="flex flex-wrap items-center gap-4">
+              <h4 className="text-xl font-bold mr-4">
+                Our Features <br /> Special For You
+              </h4>
 
-          <div className="flex flex-wrap items-center gap-4">
-            <h4 className="text-xl font-bold mr-4">
-              Our Features <br /> Special For You
-            </h4>
-
-            <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
-              Get Certificate
-            </span>
-            <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
-              Amazing Instructor
-            </span>
-            <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
-              Lifetime Support
-            </span>
-            <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
-              Video Lesson
-            </span>
-          </div>
-        </section>
+              <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
+                Get Certificate
+              </span>
+              <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
+                Amazing Instructor
+              </span>
+              <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
+                Lifetime Support
+              </span>
+              <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
+                Video Lesson
+              </span>
+            </div>{" "}
+          </section>
+        </div>
       </section>
-      <hr />
+      <section className="py-20 bg-slate-50/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Popular Courses
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {courseData.map((course) => (
+              <Card
+                key={course.id}
+                className={`${course.theme.cardBg} border-none shadow-sm rounded-[40px] p-4 flex flex-col transition-all hover:shadow-xl hover:-translate-y-1`}
+              >
+                <CardContent className="pt-6 flex-grow">
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl">
+                      {/* You can replace this with course images later */}
+                      🎓
+                    </div>
+                    <Badge
+                      className={`${course.theme.badge} border-none rounded-md px-3 py-1 text-[10px]`}
+                    >
+                      {course.category}
+                    </Badge>
+                  </div>
+
+                  <h3 className="text-2xl font-bold mb-4 leading-tight text-slate-900">
+                    {course.title}
+                  </h3>
+
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                    {course.description}
+                  </p>
+
+                  <div className="flex justify-between items-center text-xs font-medium text-slate-500">
+                    <div className="flex items-center gap-2">
+                      <div className="w-6 h-6 rounded-full bg-slate-200" />{" "}
+                      {/* Avatar Placeholder */}
+                      {course.instructor}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <span className="text-yellow-500">★</span> {course.rating}
+                    </div>
+                  </div>
+                </CardContent>
+
+                <CardFooter className="flex justify-between items-center border-t border-slate-100/50 pt-6">
+                  <span className="text-2xl font-bold text-slate-900">
+                    {course.price}
+                  </span>
+                  <Button
+                    variant={course.theme.buttonVariant as any}
+                    className={`rounded-full px-6 ${course.id === 2 ? "bg-[#9D95FF] text-white hover:bg-[#8a82e6]" : ""}`}
+                  >
+                    Join Now →
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
