@@ -5,7 +5,7 @@ import { RainbowButton } from "@/components/ui/rainbow-button";
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-screen flex flex-col items-center  overflow-hidden pt-20">
+      <section className="relative min-h-screen flex flex-col items-center overflow-hidden pt-35">
         <div className="hero-bg absolute  inset-0 z-0"></div>
         <div className="relative z-2 text-center max-w-[780] px-6 animate-fade-up">
           <p className="text-[0.89rem] dark:text-white tracking-normal text-muted mb-5 font-normal">
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <section className="max-w-7xl mx-auto px-6 py-20 font-sans">
+        <section className="max-w-7xl mx-auto px-6 py-20 font-sans bg-">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-5xl font-bold tracking-tight dark:text-white text-slate-900 leading-[1.1]">
@@ -80,8 +80,8 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  class="size-6"
+                  strokeWidth="2"
+                  className="size-6"
                 >
                   <path d="m7.5 4.27 9 5.15" />
                   <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
