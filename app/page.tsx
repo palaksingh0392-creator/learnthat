@@ -1,21 +1,12 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { TextAnimate } from "@/components/ui/text-animate";
 import { RainbowButton } from "@/components/ui/rainbow-button";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-screen flex flex-col items-center overflow-hidden pt-20">
-        <div className="hero-bg absolute inset-0 z-0"></div>
+      <section className="relative min-h-screen flex flex-col items-center  overflow-hidden pt-20">
+        <div className="hero-bg absolute  inset-0 z-0"></div>
         <div className="relative z-2 text-center max-w-[780] px-6 animate-fade-up">
           <p className="text-[0.89rem] dark:text-white tracking-normal text-muted mb-5 font-normal">
             the best platform you visit for learning
@@ -69,7 +60,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex flex-col items-end gap-4">
-              <p className="text-slate-500 dark:text-white text-right max-w-[200px] text-sm">
+              <p className="text-slate-500 dark:text-white text-right max-w-50 text-sm">
                 With real world projects to create and online classNamees that
                 fit a busy routine
               </p>
@@ -118,7 +109,7 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                     className="size-6"
                   >
                     <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
@@ -135,7 +126,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="hidden lg:block w-full h-full bg-white/20 rounded-2xl min-h-[200px]"></div>
+              <div className="hidden lg:block w-full h-full bg-white/20 rounded-2xl min-h-50"></div>
             </div>
           </div>
 

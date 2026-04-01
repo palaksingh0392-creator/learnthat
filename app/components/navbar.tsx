@@ -5,7 +5,7 @@ import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 export default function Navbar() {
   return (
     <>
-      <header className="w-full border-b bg-light">
+      <header className="fixed top-0 left-0 z-50 w-full border-b bg-background/80 backdrop-blur-md transition-colors duration-300">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* 1. LOGO SECTION */}
           <div className="flex items-center">
