@@ -10,6 +10,7 @@ import courseData from "@/data/module.json"; // Import your JSON here
 import { Button } from "@/components/ui/button";
 import { ShineBorder } from "@/components/ui/shine-border";
 import { Input } from "@/components/ui/input";
+import { SparklesText } from "@/components/ui/sparkles-text";
 export default function Home() {
   return (
     <>
@@ -165,7 +166,7 @@ export default function Home() {
       <section className="py-20 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12">
-            Popular Courses
+            <SparklesText>Popular Courses</SparklesText>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
