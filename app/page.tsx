@@ -273,7 +273,7 @@ export default function Home() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="1"
+            strokeWidth="1"
             className="text-slate-500"
           >
             <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
