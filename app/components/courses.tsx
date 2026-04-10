@@ -3,10 +3,10 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import courseData from "@/data/module.json"; // Import your JSON here
 import { Button } from "@/components/ui/button";
-export default function Course(){
-    return(
-        <>
-           <section className="py-20 bg-slate-50/50">
+export default function Courses() {
+  return (
+    <>
+      <section className="py-20 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12">
             <SparklesText>Popular Courses</SparklesText>
@@ -67,6 +67,6 @@ export default function Course(){
           </div>
         </div>
       </section>
-        </>
-    )
+    </>
+  );
 }

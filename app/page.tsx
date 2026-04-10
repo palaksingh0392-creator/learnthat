@@ -4,12 +4,13 @@ import { RainbowButton } from "@/components/ui/rainbow-button";
 import { AuroraText } from "@/components/ui/aurora-text";
 import { Meteors } from "@/components/ui/meteors";
 
-
 import { Button } from "@/components/ui/button";
 import { ShineBorder } from "@/components/ui/shine-border";
 import { Input } from "@/components/ui/input";
 
 import { Particles } from "@/components/ui/particles";
+
+import Courses from "./components/courses";
 export default function Home() {
   return (
     <>
@@ -162,6 +163,7 @@ export default function Home() {
           </section>
         </div>
       </section>{" "}
+      <Courses />
       <section className="bg-[#174169] text-white py-20 px-4 min-h-125 w-full relative overflow-hidden flex items-center justify-center">
         {/* BACKGROUND LAYER */}
         <div className="absolute inset-0 z-0">
