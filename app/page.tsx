@@ -65,7 +65,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 font-serif">
               <div className="max-w-2xl">
                 <h2 className="text-5xl font-bold tracking-tight dark:text-white text-slate-900 leading-[1.1]">
-                  New Skills with <AuroraText>LearnWithPalakarnthat</AuroraText>
+                  New Skills with <AuroraText>LearnWithPalak</AuroraText>
                   <br />
                   <span className="text-slate-800 dark:text-white">
                     A Detailed Look at Our Curriculum
@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-slate-900 leading-tight mb-4">
-                    LearnWithPalakarn at your own pace
+                    Learn at your own pace
                   </h3>
                   <p className="text-slate-700 text-sm leading-relaxed">
                     Hands-on creative classes designed for your schedule.
@@ -158,73 +158,12 @@ export default function Home() {
                 Lifetime Support
               </span>
               <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
-                Video LearnWithPalaksson
+                Video Lesson
               </span>
             </div>{" "}
           </section>
         </div>
       </section>{" "}
-      <section className="py-20 bg-slate-50/50">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            <SparklesText>Popular Courses</SparklesText>
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-            {courseData.map((course) => (
-              <Card
-                key={course.id}
-                className={`${course.theme.cardBg} border-none shadow-sm rounded-[40px] p-4 flex flex-col transition-all hover:shadow-xl hover:-translate-y-1`}
-              >
-                <CardContent className="pt-6 flex-grow">
-                  <div className="flex justify-between items-start mb-6">
-                    <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl">
-                      {/* You can replace this with course images later */}
-                      🎓
-                    </div>
-                    <Badge
-                      className={`${course.theme.badge} border-none rounded-md px-3 py-1 text-[10px]`}
-                    >
-                      {course.category}
-                    </Badge>
-                  </div>
-
-                  <h3 className="text-2xl font-bold mb-4 leading-tight text-slate-900">
-                    {course.title}
-                  </h3>
-
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                    {course.description}
-                  </p>
-
-                  <div className="flex justify-between items-center text-xs font-medium text-slate-500">
-                    <div className="flex items-center gap-2">
-                      <div className="w-6 h-6 rounded-full bg-slate-200" />{" "}
-                      {/* Avatar Placeholder */}
-                      {course.instructor}
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <span className="text-yellow-500">★</span> {course.rating}
-                    </div>
-                  </div>
-                </CardContent>
-
-                <CardFooter className="flex justify-between items-center border-t rounded-t-2xl border-slate-100/50 dark:bg-slate-500 pt-6">
-                  <span className="text-2xl font-bold text-slate-900 dark:text-white">
-                    {course.price}
-                  </span>
-                  <Button
-                    variant={course.theme.buttonVariant as any}
-                    className={`rounded-full px-6 ${course.id === 2 ? "bg-[#2a2d2f]  text-white hover:bg-[#8a82e6]" : ""}`}
-                  >
-                    Join Now →
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
       <section className="bg-[#174169] text-white py-20 px-4 min-h-125 w-full relative overflow-hidden flex items-center justify-center">
         {/* BACKGROUND LAYER */}
         <div className="absolute inset-0 z-0">
