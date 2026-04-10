@@ -28,7 +28,7 @@ export default function Navbar() {
 
               <MenubarMenu>
                 <MenubarTrigger className="cursor-pointer text-dark hover:text-blue-600">
-                  <Link href="/course">Courses</Link>
+                  <Link href="/courses">Courses</Link>
                 </MenubarTrigger>
               </MenubarMenu>
 
