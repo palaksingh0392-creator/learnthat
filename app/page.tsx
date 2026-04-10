@@ -3,14 +3,12 @@ import { TextAnimate } from "@/components/ui/text-animate";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { AuroraText } from "@/components/ui/aurora-text";
 import { Meteors } from "@/components/ui/meteors";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import courseData from "@/data/module.json"; // Import your JSON here
+
 
 import { Button } from "@/components/ui/button";
 import { ShineBorder } from "@/components/ui/shine-border";
 import { Input } from "@/components/ui/input";
-import { SparklesText } from "@/components/ui/sparkles-text";
+
 import { Particles } from "@/components/ui/particles";
 export default function Home() {
   return (
