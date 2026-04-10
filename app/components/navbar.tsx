@@ -13,7 +13,7 @@ export default function Navbar() {
               href="/"
               className="text-3xl font-bold tracking-tighter text-dark"
             >
-              Learnthat
+              LearnWithPalak
             </a>
           </div>
 

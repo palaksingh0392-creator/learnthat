@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ShineBorder } from "@/components/ui/shine-border";
 import { Input } from "@/components/ui/input";
 import { SparklesText } from "@/components/ui/sparkles-text";
+import { Particles } from "@/components/ui/particles";
 export default function Home() {
   return (
     <>
@@ -25,7 +26,7 @@ export default function Home() {
               Want to learn something, Switch to
             </TextAnimate>
 
-            <strong> Learnthat</strong>
+            <strong> LearnWithPalak</strong>
           </h1>
           <p className="text-base text-[#555] dark:text-white leading-[1.65] max-w-130 mx-auto mb-10 font-light">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
@@ -64,7 +65,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 font-serif">
               <div className="max-w-2xl">
                 <h2 className="text-5xl font-bold tracking-tight dark:text-white text-slate-900 leading-[1.1]">
-                  New Skills with <AuroraText>Learnthat</AuroraText>
+                  New Skills with <AuroraText>LearnWithPalakarnthat</AuroraText>
                   <br />
                   <span className="text-slate-800 dark:text-white">
                     A Detailed Look at Our Curriculum
@@ -104,7 +105,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-slate-900 leading-tight mb-4">
-                    Learn at your own pace
+                    LearnWithPalakarn at your own pace
                   </h3>
                   <p className="text-slate-700 text-sm leading-relaxed">
                     Hands-on creative classes designed for your schedule.
@@ -157,7 +158,7 @@ export default function Home() {
                 Lifetime Support
               </span>
               <span className="px-6 py-3 bg-slate-100 rounded-full text-slate-800 font-medium cursor-pointer hover:bg-slate-200 transition-colors">
-                Video Lesson
+                Video LearnWithPalaksson
               </span>
             </div>{" "}
           </section>
@@ -224,7 +225,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#0a0a0a] text-white py-9 px-2 relative overflow-hidden">
+      <section className="bg-[#174169] text-white py-20 px-4 min-h-125 w-full relative overflow-hidden flex items-center justify-center">
+        {/* BACKGROUND LAYER */}
+        <div className="absolute inset-0 z-0">
+          <Particles />
+        </div>
+
         {/* 1. COMMUNITY CTA */}
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
@@ -240,9 +246,9 @@ export default function Home() {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="border-none bg-transparent text-slate-900 focus-visible:ring-0 placeholder:text-slate-400 h-12"
+                className="border-none bg-transparent text-slate-900 focus-visible:ring-0 placeholder:text-slate-400 h-12 w-full"
               />
-              <Button className="bg-[#1a1a1a] hover:bg-slate-800 text-white rounded-full px-8 py-6 h-12 flex items-center gap-2">
+              <Button className="bg-[#1a1a1a] hover:bg-slate-800 text-white rounded-full px-8 py-6 h-12 flex items-center gap-2 shrink-0">
                 Subscribe
                 <span className="bg-purple-400/20 text-purple-300 p-1 rounded-full">
                   <svg
@@ -265,12 +271,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 2. DECORATIVE BACKGROUND ICONS (Positioned Absolutely) */}
-        <div className="absolute top-1/2 left-10 -translate-y-1/2 opacity-20 hidden lg:block">
-          {/* Insert Trophy SVG here */}
+        {/* 2. DECORATIVE BACKGROUND ICONS */}
+        <div className="absolute top-1/2 left-10 -translate-y-1/2 opacity-10 hidden xl:block pointer-events-none">
           <svg
-            width="150"
-            height="150"
+            width="200"
+            height="200"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
