@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export default function Course() {
   return (
     <>
-      <section className="py-20 bg-slate-50/50">
+      <section className="py-20 pt-30 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12">
             <SparklesText>Popular Courses</SparklesText>
